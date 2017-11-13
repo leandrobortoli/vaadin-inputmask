@@ -2,6 +2,8 @@
 
 InputMask its a wrapper for the Input Mask javascript plugin that allows the developer to mask Vaddin components with ease. Can be used on TextField, TextArea, InputDate, Combobox, and pretty much any Vaadin component that has a text input.
 
+Available on [Vaadin Directory](https://vaadin.com/directory/component/inputmask).
+
 ## Usage
 - Create an `InputMask` and pass the mask or mask alias as parameter
 - Call `extend` and pass the Vaadin component you want to add the mask.
@@ -34,7 +36,7 @@ InputMask its a wrapper for the Input Mask javascript plugin that allows the dev
         currencyInputMask.setGroupSeparator(".");
         currencyInputMask.setRadixPoint(",");
         currencyInputMask.extend(currencyTextField);
-        layout.addComponent(currencyTextField)
+        layout.addComponent(currencyTextField);
         
         /*
          * Date Extension
