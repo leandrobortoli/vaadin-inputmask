@@ -4,6 +4,8 @@ InputMask its a wrapper for the Input Mask javascript plugin that allows the dev
 
 Available on [Vaadin Directory](https://vaadin.com/directory/component/inputmask).
 
+[Online Demo](https://vaadin-inputmask-demo.herokuapp.com/).
+
 ## Usage
 - Create an `InputMask` and pass the mask or mask alias as parameter
 - Call `extend` and pass the Vaadin component you want to add the mask.
