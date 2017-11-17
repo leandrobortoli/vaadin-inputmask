@@ -166,9 +166,7 @@ public class InputMaskConnector extends AbstractExtensionConnector implements Gw
 
 	public native void addMask(Element el, GwtMaskOptions options)
 	/*-{
-	 	$wnd.$(function($) {
-	    	$(el).inputmask( options);	
-	    });
+	 	$wnd.Inputmask(options).mask(el);
 	}-*/;
 
 	@Override
