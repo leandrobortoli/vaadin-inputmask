@@ -305,6 +305,12 @@ public class InputMask extends AbstractExtension {
 	public void setAllowMinus(boolean allowMinus) {
 		getState().allowMinus = allowMinus;
 	}
+	public void setIntegerDigits(String integerDigits) {
+		getState().integerDigits = integerDigits;
+	}
+	public void setIntegerOptional(boolean integerOptional) {
+		getState().integerOptional = integerOptional;
+	}
 	/**
 	 * Define a prefix. Default: ""
 	 * @param prefix Prefix.

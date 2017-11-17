@@ -123,6 +123,14 @@ public class GwtMaskOptions extends JavaScriptObject{
 		this.allowMinus = allowMinus;
 	}-*/;
 
+	public final native void setIntegerDigits(String integerDigits) /*-{
+		this.integerDigits = integerDigits;
+	}-*/;
+
+	public final native void setIntegerOptional(boolean integerOptional) /*-{
+		this.integerOptional = integerOptional;
+	}-*/;
+	
 	public final native void setPrefix(String prefix) /*-{
 		this.prefix = prefix;
 	}-*/;

@@ -37,6 +37,8 @@ public class InputMaskState extends com.vaadin.shared.AbstractComponentState {
     public Integer groupSize;
     public Boolean autoGroup;
     public Boolean allowMinus;
+    public String integerDigits;
+    public Boolean integerOptional;
     public String prefix;
     public String suffix;
     public Boolean decimalProtect;

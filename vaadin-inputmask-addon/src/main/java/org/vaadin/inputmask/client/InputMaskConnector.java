@@ -100,6 +100,10 @@ public class InputMaskConnector extends AbstractExtensionConnector implements Gw
 			options.setAutoGroup(state.autoGroup);
 		if(state.allowMinus != null)
 			options.setAllowMinus(state.allowMinus);
+		if(state.integerDigits != null)
+			options.setIntegerDigits(state.integerDigits);
+		if(state.integerOptional != null)
+			options.setIntegerOptional(state.integerOptional);
 		if(state.prefix != null)
 			options.setPrefix(state.prefix);
 		if(state.suffix != null)
