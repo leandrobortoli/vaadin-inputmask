@@ -162,10 +162,24 @@ public class InputMaskConnector extends AbstractExtensionConnector implements Gw
 
 	public native Element getInput(Element el)
 	/*-{
-	  	if(el.tagName.toUpperCase() == 'INPUT' || el.tagName.toUpperCase() == 'TEXTAREA') {
-	  		return el;
-	  	}
-	  	return $wnd.$(el).find("input[type='text'], textarea, input[type='search']")[0];
+	  	var searchInput = function (node) {
+	  	    if(node.tagName.toUpperCase() == 'INPUT') {
+	  			var type = node.getAttribute('type');
+	  			if(type == 'text' || type == 'search')
+	  				return node;
+	  		} else if(node.tagName.toUpperCase() == 'TEXTAREA') {
+	  			return node;
+	  		}
+        	node = node.firstChild;
+        	while(node) {
+            	var result = searchInput(node);
+            	if(result != null)
+            		return result;
+            	node = node.nextSibling;
+        	}
+        	return null;
+    	};
+    	return searchInput(el);
 	 }-*/;
 
 	public native void addMask(Element el, GwtMaskOptions options)

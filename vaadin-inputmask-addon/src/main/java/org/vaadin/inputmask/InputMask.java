@@ -19,7 +19,7 @@ import com.vaadin.ui.AbstractComponent;
  *
  * @author Leandro José de bortoli (leandrojbortoli@gmail.com)
  */
-@JavaScript({"client/js/jquery.js", "client/js/inputmask.dependencyLib.min.js", "client/js/inputmask.min.js", 
+@JavaScript({"client/js/inputmask.dependencyLib.min.js", "client/js/inputmask.min.js", 
 	"client/js/inputmask.extensions.min.js", "client/js/inputmask.numeric.extensions.min.js", "client/js/inputmask.date.extensions.min.js"})
 public class InputMask extends AbstractExtension {
 	private static final long serialVersionUID = -8054139927566326662L;
